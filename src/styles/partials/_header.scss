@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  &__wrapper {
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link > a > img {
+    width: 30px;
+  }
+}

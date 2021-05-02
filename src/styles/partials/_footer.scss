@@ -1,0 +1,11 @@
+.footer {
+  position: fixed;
+  &__wrapper {
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+  }
+}
