@@ -1,9 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, lazy, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
-import About from "../about/About";
-import Aim from "../aim/Aim";
+
 import Home from "../home/Home";
-import Projects from "../projects/Projects";
+
+const About = lazy(() => import("../about/About"));
+const Contact = lazy(() => import("../contact/Contact"));
+const Projects = lazy(() => import("../projects/Projects"));
 
 const Routing = () => {
   return (
@@ -18,8 +20,8 @@ const Routing = () => {
         <Route path="/projects">
           <Projects />
         </Route>
-        <Route path="/aim">
-          <Aim />
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Fragment>

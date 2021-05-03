@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
 .app {
   position: relative;
   max-width: 100vw;
@@ -14,4 +16,5 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 60px 1fr;
+  font-family: "Electrolize", sans-serif;
 }

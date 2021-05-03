@@ -7,7 +7,7 @@ const Header = () => {
     <div className="app__header header">
       <div className="header__wrapper">
         <div className="header__link">
-          <NavLink to="/">
+          <NavLink to="/" className="header__link-left">
             <span>main</span>
           </NavLink>
         </div>
@@ -16,9 +16,9 @@ const Header = () => {
             <img src={jordan} alt="23" />
           </NavLink>
         </div>
-        <div className="header__link">
-          <NavLink to="projects">
-            <span>projects</span>
+        <div className="header__link ">
+          <NavLink to="about" className="header__link-right">
+            <span>about</span>
           </NavLink>
         </div>
       </div>

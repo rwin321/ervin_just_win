@@ -2,13 +2,30 @@
   position: relative;
   &__wrapper {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  &__link-left {
+    @include roll-in(roll-left, -400px, 540deg);
+  }
+  &__link-right {
+    @include roll-in(roll-right, 400px, -540deg);
+  }
+  &__link:first-child:hover {
+    transition: 0.3s ease-in-out;
+    transform: rotate(10deg);
+  }
+  &__link:nth-child(3n):hover {
+    transition: 0.3s ease-in-out;
+    transform: rotate(-10deg);
+  }
   &__link > a > img {
     width: 30px;
+  }
+  &__link > a {
+    display: block;
   }
 }

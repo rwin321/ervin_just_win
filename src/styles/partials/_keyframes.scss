@@ -1,0 +1,33 @@
+@mixin roll-in($name, $x, $r) {
+  @keyframes #{$name} {
+    0% {
+      -webkit-transform: translateX($x) rotate($r);
+      transform: translateX($x) rotate($r);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  -webkit-animation: $name 0.3s ease-out 0.3s both;
+  animation: $name 0.3s ease-out 0.3s both;
+}
+
+@mixin roll-under {
+  @keyframes roll-under-bot {
+    0% {
+      -webkit-transform: translateY(500px) rotate(540deg);
+      transform: translateY(500px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  -webkit-animation: roll-under-bot 0.4s ease-out 0.3s both;
+  animation: roll-under-bot 0.4s ease-out 0.3s both;
+}

@@ -5,12 +5,16 @@ const Footer = () => {
   return (
     <div className="app__footer footer">
       <div className="footer__wrapper">
-        <NavLink to="/projects">
-          <div className="footer__link">projects</div>
-        </NavLink>
-        <NavLink to="aim">
-          <div className="footer__link">aim</div>
-        </NavLink>
+        <div className="footer__link">
+          <NavLink to="projects" className="roll-under">
+            <span>projects</span>
+          </NavLink>
+        </div>
+        <div className="footer__link">
+          <NavLink to="contact" className="roll-under">
+            <span>contact</span>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
