@@ -1,11 +1,13 @@
 import React from "react";
+import ShortInfo from "./ShortInfo";
+import Person from "./Person";
 
 const Home = () => {
   return (
-    <section className="content__home home">
-      <div>Main block 1</div>
-      <div>Main block 2</div>
-    </section>
+    <main className="content__home home">
+      <ShortInfo />
+      <Person />
+    </main>
   );
 };
 

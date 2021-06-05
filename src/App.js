@@ -3,7 +3,7 @@ import "./styles/main.scss";
 import Routing from "./components/routing/Routing";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Preloader from "./components/preloader/Preloader";
+import Preloader from "./common/preloader/Preloader";
 
 const App = () => {
   return (

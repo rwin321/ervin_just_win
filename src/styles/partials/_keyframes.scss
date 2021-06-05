@@ -31,3 +31,24 @@
   -webkit-animation: roll-under-bot 0.4s ease-out 0.3s both;
   animation: roll-under-bot 0.4s ease-out 0.3s both;
 }
+
+@keyframes showFormLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes showFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
