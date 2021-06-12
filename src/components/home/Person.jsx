@@ -7,17 +7,21 @@ const Person = () => {
   return (
     <aside className="home__person person">
       <Card className="person__card card">
-        <Card.Img className="card__photo" src={profilePhoto} />
-        <Card.Body>
+        <NavLink to="/about">
+          <Card.Img className="card__photo" src={profilePhoto} />
+        </NavLink>
+        <Card.Body className="card__body">
           <Card.Title className="card__text">Profile: </Card.Title>
           <Card.Text className="card__text">Ervin Abliamitov</Card.Text>
           <Card.Text className="card__text">Front-end developer</Card.Text>
           <Card.Text className="card__text">
             JS / HTML / CSS (SCSS) / React / Redux / Material UIs
           </Card.Text>
-          <Card.Text className="card__text contacts">
-            <NavLink to="/contact">how to contact me</NavLink>
-          </Card.Text>
+          <NavLink to="/contact">
+            <Card.Text className="card__text contacts">
+              how to contact me
+            </Card.Text>
+          </NavLink>
         </Card.Body>
       </Card>
     </aside>
