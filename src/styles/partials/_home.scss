@@ -15,11 +15,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 3%;
+    margin: 0 17px;
     @media (max-width: 750px) {
       width: 100%;
     }
-
     &-title {
       font-size: 1.75rem;
       margin: 0.5rem 0;
@@ -49,18 +48,32 @@
               line-height: 150%;
             }
           }
+          @media (max-width: 400px) {
+            & {
+              font-size: 0.65rem;
+            }
+            &-text {
+              line-height: 120%;
+            }
+          }
         }
       }
     }
   }
 
   .person {
+    animation: showPerson 3s;
     position: relative;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: max-content;
+    margin: 0 17px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 2px 3px 3px black;
+    border-radius: 15px;
     @media (max-width: 750px) {
       width: 100%;
     }
@@ -71,9 +84,20 @@
       flex-direction: column;
       max-width: 100%;
       & > a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 1rem;
+      }
+      @media (max-width: 1200px) {
+        & > a {
+          max-width: 300px;
+        }
+      }
+      @media (max-width: 850px) {
+        & > a {
+          max-width: 250px;
+        }
       }
       &__photo {
         animation: rotateImg ease-in 1.4s;
@@ -83,15 +107,18 @@
         max-width: 100%;
         border-radius: 20px;
         margin-bottom: 1rem;
+        border: 2px solid transparent;
         cursor: pointer;
         &:hover {
-          transition: 1s;
-          box-shadow: 2px 3px 5px;
+          transition: 1.2s ease-in-out;
+          border: 2px solid orange;
+          transform: scale(0.9);
         }
       }
       &__text {
         display: flex;
         margin: 0.3rem 0;
+        padding: 0.5rem;
       }
       &__body {
         width: 100%;
@@ -104,16 +131,6 @@
         text-decoration: underline;
         & a {
           color: lightskyblue;
-        }
-      }
-      @media (max-width: 1200px) {
-        &__photo {
-          max-width: 300px;
-        }
-      }
-      @media (max-width: 850px) {
-        &__photo {
-          max-width: 250px;
         }
       }
     }

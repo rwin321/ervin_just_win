@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 475px) {
+      padding: 1rem;
+    }
   }
   &__link-left {
     @include roll-in(roll-left, -400px, 540deg);
