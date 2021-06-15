@@ -1,4 +1,3 @@
-import React from "react";
 import ShortInfo from "./ShortInfo";
 import Person from "./Person";
 

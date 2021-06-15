@@ -1,5 +1,8 @@
 .header {
   position: relative;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
   &__wrapper {
     width: 100%;
     padding: 2rem;
@@ -7,9 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 475px) {
-      padding: 1rem;
-    }
   }
   &__link-left {
     @include roll-in(roll-left, -400px, 540deg);
@@ -30,5 +30,12 @@
   }
   &__link > a {
     display: block;
+  }
+  @media (max-width: 475px) {
+    font-size: 1rem;
+
+    &__wrapper {
+      padding: 1rem;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import "./styles/main.scss";
 import Routing from "./components/routing/Routing";
 import Header from "./components/header/Header";

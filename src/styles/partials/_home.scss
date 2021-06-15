@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
   flex-shrink: 1;
+  font-family: "Electrolize", sans-serif;
   @media (max-width: 750px) {
     flex-direction: column;
   }
-
   &__short-info {
     animation: showFormLeft 1.25s;
     width: 50%;
@@ -79,7 +79,7 @@
     }
 
     .card {
-      animation: showFromRight 2s;
+      animation: showFromRight 1.5s;
       display: flex;
       flex-direction: column;
       max-width: 100%;
@@ -100,7 +100,6 @@
         }
       }
       &__photo {
-        animation: rotateImg ease-in 1.4s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -110,7 +109,7 @@
         border: 2px solid transparent;
         cursor: pointer;
         &:hover {
-          transition: 1.2s ease-in-out;
+          transition: 1s ease-in-out;
           border: 2px solid orange;
           transform: scale(0.9);
         }

@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# test components
+/src/components/about/Counter.tsx
+/src/components/about/CounterFC.tsx
+/src/components/about/IsFive.tsx

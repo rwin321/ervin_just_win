@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
 import profilePhoto from "../../assets/imgs/ervin_profile.jpg";
@@ -15,7 +14,7 @@ const Person = () => {
           <Card.Text className="card__text">Ervin Abliamitov</Card.Text>
           <Card.Text className="card__text">Front-end developer</Card.Text>
           <Card.Text className="card__text">
-            JS / HTML / CSS (SCSS) / React / Redux / Material UIs
+            JS / HTML / CSS (SCSS) / React / Redux / TS / Material UIs
           </Card.Text>
           <NavLink to="/contact">
             <Card.Text className="card__text contacts">

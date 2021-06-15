@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import jordan from "../../assets/imgs/jordan.svg";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ShortInfo = () => {
   return (
     <section className="home__short-info">

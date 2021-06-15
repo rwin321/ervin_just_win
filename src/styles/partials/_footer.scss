@@ -1,5 +1,8 @@
 .footer {
   position: fixed;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
   &__wrapper {
     padding: 2rem;
     width: 100%;
@@ -7,9 +10,6 @@
     display: flex;
     justify-content: space-between;
     bottom: 0;
-    @media (max-width: 475px) {
-      padding: 1rem;
-    }
   }
   &__link a {
     display: block;
@@ -24,5 +24,11 @@
   }
   .roll-under {
     @include roll-under;
+  }
+  @media (max-width: 475px) {
+    font-size: 1rem;
+    &__wrapper {
+      padding: 1rem;
+    }
   }
 }
