@@ -82,12 +82,17 @@
       animation: showFromRight 1.5s;
       display: flex;
       flex-direction: column;
-      max-width: 100%;
+      max-width: 550px;
       & > a {
         display: block;
         margin: 0 auto;
         max-width: 400px;
         padding: 1rem;
+      }
+      @media (max-width: 1344px) {
+        & > a {
+          max-width: 320px;
+        }
       }
       @media (max-width: 1200px) {
         & > a {
@@ -95,9 +100,11 @@
         }
       }
       @media (max-width: 850px) {
-        & > a {
-          max-width: 250px;
-        }
+        width: 80%;
+        margin: 0 auto;
+        // & > a {
+        //   max-width: 250px;
+        // }
       }
       &__photo {
         display: flex;
