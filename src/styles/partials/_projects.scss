@@ -15,7 +15,7 @@
   &__cards {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 20px;
     align-items: stretch;
     justify-items: center;
@@ -23,6 +23,11 @@
   }
 }
 
+@media (max-width: 1920px) {
+  .projects__cards {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+}
 @media (max-width: 1443px) {
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -34,5 +39,10 @@
 @media (max-width: 1200px) {
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }

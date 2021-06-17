@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import "./styles/main.scss";
-import Routing from "./components/routing/Routing";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Preloader from "./common/preloader/Preloader";
+import Routing from "./components/Routing/Routing";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Preloader from "./common/Preloader/Preloader";
 
 const App = () => {
   return (

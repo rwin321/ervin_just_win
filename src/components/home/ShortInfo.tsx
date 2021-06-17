@@ -8,16 +8,19 @@ const ShortInfo = () => {
         <p>
           <span>
             I'm a young, ambitious and self-motivated web developer, who wants
-            to study and open new things every day! I like to take participate
-            in different tasks and challenges. I haveexperience in many parts of
-            the businesses like property sphere, tax office, managing, etc.
-            Since last year I have concentrated on IT-sphere.
+            to study something new every day!
+          </span>
+          <span>
+            I like to take participate in different tasks and challenges. I have
+            experience in many parts of the businesses like
+            <q>property sphere, tax office, managing, etc.</q> Since last year I
+            have concentrated on IT-sphere.
           </span>
         </p>
         <p>
           <span>
             If you need to make a website, feel free to contact me! Quality - is
-            the most important option for me.
+            the most important feature of the modern website.
           </span>
         </p>
       </article>

@@ -1,12 +1,12 @@
-import { Fragment, Suspense } from "react";
+import React, { Fragment, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "../home/Home";
-import Preloader from "../../common/preloader/Preloader";
+import Home from "../Home/Home";
+import Preloader from "../../common/Preloader/Preloader";
 import { MinimumSpinnerDelay } from "../../common/MinimumSpinnerDelay";
 
-const About = MinimumSpinnerDelay(import("../about/About"));
-const Contact = MinimumSpinnerDelay(import("../contact/Contact"));
-const Projects = MinimumSpinnerDelay(import("../projects/Projects"));
+const About = MinimumSpinnerDelay(import("../About/About"));
+const Contact = MinimumSpinnerDelay(import("../Contact/Contact"));
+const Projects = MinimumSpinnerDelay(import("../Projects/Projects"));
 
 const Routing = () => {
   return (

@@ -37,6 +37,8 @@
         padding: 0.3rem;
         margin: 1rem 0;
         & span {
+          margin: 0.25rem 0;
+          display: block;
           font-size: 1.2rem;
           letter-spacing: 0.11rem;
           line-height: 130%;
@@ -48,12 +50,17 @@
               line-height: 150%;
             }
           }
+          @media (max-width: 850px) {
+            &-text {
+              line-height: 115%;
+            }
+          }
           @media (max-width: 400px) {
             & {
               font-size: 0.65rem;
             }
             &-text {
-              line-height: 120%;
+              line-height: 105%;
             }
           }
         }
