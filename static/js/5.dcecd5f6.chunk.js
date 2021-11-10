@@ -1,0 +1,2 @@
+(this.webpackJsonpervin_abliamtiov_website=this.webpackJsonpervin_abliamtiov_website||[]).push([[5],{35:function(t,e,n){"use strict";n.r(e);var c=n(0),i=function(){return Object(c.jsx)("div",{children:"ContactInfo"})},s=function(){return Object(c.jsx)("div",{children:"ContactForm"})};e.default=function(){return Object(c.jsxs)("section",{children:[Object(c.jsx)(i,{}),Object(c.jsx)("br",{}),Object(c.jsx)("br",{}),Object(c.jsx)("br",{}),Object(c.jsx)(s,{})]})}}}]);
+//# sourceMappingURL=5.dcecd5f6.chunk.js.map
