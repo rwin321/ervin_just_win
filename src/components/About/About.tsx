@@ -51,7 +51,7 @@ const About = () => {
           <h2>languages:</h2>
           <ul className="menu language">
             <li className="menu__item">English</li>
-            <li className="menu__item">upper-intermedia</li>
+            <li className="menu__item">upper-intermediate</li>
             <li className="menu__item">Russian</li>
             <li className="menu__item">native</li>
             <li className="menu__item">Ukrainian</li>
